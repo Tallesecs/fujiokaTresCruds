@@ -4,6 +4,7 @@ const Atendimento = require('../models/atendimentos')
 module.exports = app => {
     app.get('/atendimentos', (req, res) => {
         Atendimento.list(res) 
+        
     })
 
     app.post('/atendimentos', (req, res) => { 
